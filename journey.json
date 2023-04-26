@@ -1,0 +1,1362 @@
+{
+  "errors": [
+    {
+      "code": "string",
+      "title": "string",
+      "detail": "string",
+      "source": {
+        "pointer": "string",
+        "parameter": "string"
+      },
+      "status": "string"
+    }
+  ],
+  "warnings": [
+    {
+      "code": "string",
+      "title": "string",
+      "detail": "string",
+      "source": {
+        "pointer": "string",
+        "parameter": "string"
+      }
+    }
+  ],
+  "data": [
+    {
+      "acceptance": {
+        "isAccepted": true,
+        "isPartial": true,
+        "checkedInJourneyElements": [
+          {
+            "id": "string"
+          }
+        ],
+        "notCheckedInJourneyElements": [
+          {
+            "id": "string"
+          }
+        ],
+        "securityQuestionsToAnswer": [
+          {
+            "questionCode": "string",
+            "questionDescription": "string"
+          }
+        ],
+        "isEligibleForVoluntaryDeniedBoarding": false,
+        "isVoluntaryDeniedBoarding": true
+      },
+      "acceptanceEligibility": {
+        "status": "eligible",
+        "eligibilityWindow": {
+          "openingDateAndTime": "2023-04-20T04:57:17.339Z",
+          "closingDateAndTime": "2023-04-20T04:57:17.339Z"
+        },
+        "reasons": [
+          "firstFlightOtherAirline"
+        ]
+      },
+      "contacts": [
+        {
+          "id": "string",
+          "tid": "string",
+          "travelerIds": [
+            "string"
+          ],
+          "travelerTIds": [
+            "string"
+          ],
+          "category": "personal",
+          "addresseeName": "string",
+          "isThirdParty": true,
+          "contactType": "Email",
+          "dataConsentUsage": [
+            {
+              "allowedParties": [
+                {
+                  "officeMask": {
+                    "mask": "string",
+                    "includeFamilyOffices": true
+                  }
+                }
+              ],
+              "permissions": [
+                {
+                  "action": "READ"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "flights": [
+        {
+          "id": "string"
+        }
+      ],
+      "id": "string",
+      "isGroupBooking": false,
+      "journeyElements": [
+        {
+          "id": "string"
+        }
+      ],
+      "travelers": [
+        {
+          "passengerTypeCode": "ADT",
+          "id": "string",
+          "tid": "string",
+          "names": [
+            {
+              "firstName": "Arthur Ignatius",
+              "middleName": "Ignatius",
+              "lastName": "Holmes",
+              "title": "Dr",
+              "nameType": "universal",
+              "isPreferred": true
+            }
+          ],
+          "dateOfBirth": "2002-07-25",
+          "age": 36,
+          "accompanyingTravelerId": "string",
+          "accompanyingTravelerTid": "string",
+          "gender": "male",
+          "regulatoryDetails": [
+            {
+              "id": "string",
+              "tid": "string",
+              "flightIds": [
+                "string"
+              ],
+              "airlineCode": "string",
+              "regulatoryApisType": "ApisDetailRegulatoryDocument"
+            }
+          ],
+          "nationalityCountryCodes": [
+            "string"
+          ],
+          "customerProfileId": "string",
+          "staffNumber": "string",
+          "staffCategory": "bookable",
+          "entitlementDocuments": [
+            {
+              "id": "string",
+              "tid": "string",
+              "documentType": "SpanishResidentCard"
+            }
+          ],
+          "purposeOfVisit": "hajj",
+          "isPilgrimConfirmationProvided": false,
+          "isVoluntaryToSplitTravelers": false
+        }
+      ],
+      "type": "standalone",
+      "checkinSystem": {
+        "owner": {
+          "name": "string",
+          "code": "string"
+        },
+        "relationships": {
+          "collection": [
+            {
+              "rel": "CHECKIN_IDENTIFICATION",
+              "methods": [
+                "GET"
+              ]
+            }
+          ]
+        }
+      },
+      "linkedJourneyIds": [
+        "string"
+      ],
+      "services": [
+        {
+          "id": "string",
+          "tid": "string",
+          "descriptions": [
+            {
+              "type": "shortText",
+              "content": "string",
+              "lang": "string"
+            }
+          ],
+          "reasonForIssuance": {
+            "code": "C",
+            "subCode": "0GO"
+          },
+          "quantity": 0,
+          "quota": 0,
+          "quotaStatus": "unknown",
+          "tags": [
+            "string"
+          ],
+          "flightIds": [
+            "string"
+          ],
+          "statusCode": "string",
+          "parameters": [
+            {
+              "id": "string",
+              "code": "string",
+              "validatingFormat": "string",
+              "minVal": "string",
+              "maxVal": "string",
+              "value": "string",
+              "description": "string",
+              "requirementLevel": "mandatory",
+              "subParameterIds": [
+                "string"
+              ]
+            }
+          ],
+          "subServiceIds": [
+            "string"
+          ],
+          "isHighlighted": true,
+          "displayOrder": 0,
+          "media": [
+            {
+              "mediaId": "string",
+              "travelerId": "string",
+              "flightIds": [
+                "string"
+              ],
+              "airlineCode": "string"
+            }
+          ],
+          "atpcoCategory": {
+            "code": "string",
+            "subCode": "string"
+          },
+          "travelerId": "string",
+          "prices": {
+            "unitPrices": [
+              {
+                "travelerIds": [
+                  "string"
+                ],
+                "flightIds": [
+                  "string"
+                ],
+                "prices": [
+                  {
+                    "base": 0,
+                    "baseDetails": {
+                      "surcharges": [
+                        {
+                          "value": 0,
+                          "rawValue": "string",
+                          "currencyCode": "string",
+                          "code": "string",
+                          "category": "OLD",
+                          "isExempted": true,
+                          "pricingTimeWindow": "hourly",
+                          "percentage": 0
+                        }
+                      ]
+                    },
+                    "total": 0,
+                    "currencyCode": "string",
+                    "taxes": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "category": "OLD",
+                        "type": "PFC",
+                        "isExempted": true,
+                        "percentage": 0,
+                        "applicationLevel": "itinerary"
+                      }
+                    ],
+                    "totalTaxes": 0,
+                    "surcharges": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "category": "OLD",
+                        "isExempted": true,
+                        "pricingTimeWindow": "hourly",
+                        "percentage": 0
+                      }
+                    ],
+                    "totalSurcharges": 0,
+                    "fees": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "nature": "ticketing",
+                        "minAmount": 0,
+                        "maxAmount": 0
+                      }
+                    ],
+                    "totalFees": 0,
+                    "discount": {
+                      "originalTotal": 0,
+                      "originalBase": 0,
+                      "originalTotalTaxes": 0,
+                      "discountCode": "string",
+                      "discountCodes": [
+                        "string"
+                      ]
+                    },
+                    "conditions": {
+                      "itemOccurrence": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    }
+                  }
+                ],
+                "milesConversion": {
+                  "convertedMiles": {
+                    "base": 0,
+                    "total": 0,
+                    "totalTaxes": 0,
+                    "totalSurcharges": 0,
+                    "discount": {
+                      "originalTotal": 0,
+                      "originalBase": 0,
+                      "originalTotalTaxes": 0,
+                      "discountCode": "string",
+                      "discountCodes": [
+                        "string"
+                      ]
+                    }
+                  },
+                  "remainingNonConverted": {
+                    "base": 0,
+                    "baseDetails": {
+                      "surcharges": [
+                        {
+                          "value": 0,
+                          "rawValue": "string",
+                          "currencyCode": "string",
+                          "code": "string",
+                          "category": "OLD",
+                          "isExempted": true,
+                          "pricingTimeWindow": "hourly",
+                          "percentage": 0
+                        }
+                      ]
+                    },
+                    "total": 0,
+                    "currencyCode": "string",
+                    "taxes": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "category": "OLD",
+                        "type": "PFC",
+                        "isExempted": true,
+                        "percentage": 0,
+                        "applicationLevel": "itinerary"
+                      }
+                    ],
+                    "totalTaxes": 0,
+                    "surcharges": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "category": "OLD",
+                        "isExempted": true,
+                        "pricingTimeWindow": "hourly",
+                        "percentage": 0
+                      }
+                    ],
+                    "totalSurcharges": 0,
+                    "fees": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "nature": "ticketing",
+                        "minAmount": 0,
+                        "maxAmount": 0
+                      }
+                    ],
+                    "totalFees": 0,
+                    "discount": {
+                      "originalTotal": 0,
+                      "originalBase": 0,
+                      "originalTotalTaxes": 0,
+                      "discountCode": "string",
+                      "discountCodes": [
+                        "string"
+                      ]
+                    },
+                    "conditions": {
+                      "itemOccurrence": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    }
+                  }
+                },
+                "exchangePrices": {
+                  "balance": {
+                    "base": 0,
+                    "total": 0,
+                    "totalTaxes": 0,
+                    "currencyCode": "string"
+                  },
+                  "additionalCollection": {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string"
+                  },
+                  "penalty": {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string"
+                  },
+                  "refund": {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string"
+                  },
+                  "convertedMiles": {
+                    "balance": {
+                      "base": 0,
+                      "total": 0,
+                      "totalTaxes": 0,
+                      "currencyCode": "string"
+                    },
+                    "additionalCollection": {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string"
+                    },
+                    "refund": {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string"
+                    },
+                    "penalty": {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string"
+                    }
+                  }
+                }
+              }
+            ],
+            "totalPrices": [
+              {
+                "base": 0,
+                "baseDetails": {
+                  "surcharges": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "isExempted": true,
+                      "pricingTimeWindow": "hourly",
+                      "percentage": 0
+                    }
+                  ]
+                },
+                "total": 0,
+                "currencyCode": "string",
+                "taxes": [
+                  {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string",
+                    "code": "string",
+                    "category": "OLD",
+                    "type": "PFC",
+                    "isExempted": true,
+                    "percentage": 0,
+                    "applicationLevel": "itinerary"
+                  }
+                ],
+                "totalTaxes": 0,
+                "surcharges": [
+                  {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string",
+                    "code": "string",
+                    "category": "OLD",
+                    "isExempted": true,
+                    "pricingTimeWindow": "hourly",
+                    "percentage": 0
+                  }
+                ],
+                "totalSurcharges": 0,
+                "fees": [
+                  {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string",
+                    "code": "string",
+                    "nature": "ticketing",
+                    "minAmount": 0,
+                    "maxAmount": 0
+                  }
+                ],
+                "totalFees": 0,
+                "discount": {
+                  "originalTotal": 0,
+                  "originalBase": 0,
+                  "originalTotalTaxes": 0,
+                  "discountCode": "string",
+                  "discountCodes": [
+                    "string"
+                  ]
+                },
+                "conditions": {
+                  "itemOccurrence": {
+                    "min": 0,
+                    "max": 0
+                  }
+                }
+              }
+            ],
+            "isRedemption": true,
+            "milesConversion": {
+              "convertedMiles": {
+                "base": 0,
+                "total": 0,
+                "totalTaxes": 0,
+                "totalSurcharges": 0,
+                "discount": {
+                  "originalTotal": 0,
+                  "originalBase": 0,
+                  "originalTotalTaxes": 0,
+                  "discountCode": "string",
+                  "discountCodes": [
+                    "string"
+                  ]
+                }
+              },
+              "remainingNonConverted": {
+                "base": 0,
+                "baseDetails": {
+                  "surcharges": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "isExempted": true,
+                      "pricingTimeWindow": "hourly",
+                      "percentage": 0
+                    }
+                  ]
+                },
+                "total": 0,
+                "currencyCode": "string",
+                "taxes": [
+                  {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string",
+                    "code": "string",
+                    "category": "OLD",
+                    "type": "PFC",
+                    "isExempted": true,
+                    "percentage": 0,
+                    "applicationLevel": "itinerary"
+                  }
+                ],
+                "totalTaxes": 0,
+                "surcharges": [
+                  {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string",
+                    "code": "string",
+                    "category": "OLD",
+                    "isExempted": true,
+                    "pricingTimeWindow": "hourly",
+                    "percentage": 0
+                  }
+                ],
+                "totalSurcharges": 0,
+                "fees": [
+                  {
+                    "value": 0,
+                    "rawValue": "string",
+                    "currencyCode": "string",
+                    "code": "string",
+                    "nature": "ticketing",
+                    "minAmount": 0,
+                    "maxAmount": 0
+                  }
+                ],
+                "totalFees": 0,
+                "discount": {
+                  "originalTotal": 0,
+                  "originalBase": 0,
+                  "originalTotalTaxes": 0,
+                  "discountCode": "string",
+                  "discountCodes": [
+                    "string"
+                  ]
+                },
+                "conditions": {
+                  "itemOccurrence": {
+                    "min": 0,
+                    "max": 0
+                  }
+                }
+              }
+            },
+            "exchangePrices": {
+              "balance": {
+                "base": 0,
+                "total": 0,
+                "totalTaxes": 0,
+                "currencyCode": "string"
+              },
+              "additionalCollection": {
+                "value": 0,
+                "rawValue": "string",
+                "currencyCode": "string"
+              },
+              "penalty": {
+                "value": 0,
+                "rawValue": "string",
+                "currencyCode": "string"
+              },
+              "refund": {
+                "value": 0,
+                "rawValue": "string",
+                "currencyCode": "string"
+              },
+              "convertedMiles": {
+                "balance": {
+                  "base": 0,
+                  "total": 0,
+                  "totalTaxes": 0,
+                  "currencyCode": "string"
+                },
+                "additionalCollection": {
+                  "value": 0,
+                  "rawValue": "string",
+                  "currencyCode": "string"
+                },
+                "refund": {
+                  "value": 0,
+                  "rawValue": "string",
+                  "currencyCode": "string"
+                },
+                "penalty": {
+                  "value": 0,
+                  "rawValue": "string",
+                  "currencyCode": "string"
+                }
+              }
+            },
+            "milesSplitId": "string",
+            "previousSelectionPriceDifference": {
+              "priceDifference": {
+                "value": 0,
+                "currencyCode": "string"
+              },
+              "unitPriceDifferences": [
+                {
+                  "travelerIds": [
+                    "string"
+                  ],
+                  "priceDifferences": [
+                    {
+                      "value": 0,
+                      "currencyCode": "string"
+                    }
+                  ],
+                  "milesConversionPriceDifference": {
+                    "convertedMiles": {
+                      "base": 0,
+                      "total": 0,
+                      "totalTaxes": 0,
+                      "totalSurcharges": 0,
+                      "discount": {
+                        "originalTotal": 0,
+                        "originalBase": 0,
+                        "originalTotalTaxes": 0,
+                        "discountCode": "string",
+                        "discountCodes": [
+                          "string"
+                        ]
+                      }
+                    },
+                    "remainingNonConverted": {
+                      "base": 0,
+                      "baseDetails": {
+                        "surcharges": [
+                          {
+                            "value": 0,
+                            "rawValue": "string",
+                            "currencyCode": "string",
+                            "code": "string",
+                            "category": "OLD",
+                            "isExempted": true,
+                            "pricingTimeWindow": "hourly",
+                            "percentage": 0
+                          }
+                        ]
+                      },
+                      "total": 0,
+                      "currencyCode": "string",
+                      "taxes": [
+                        {
+                          "value": 0,
+                          "rawValue": "string",
+                          "currencyCode": "string",
+                          "code": "string",
+                          "category": "OLD",
+                          "type": "PFC",
+                          "isExempted": true,
+                          "percentage": 0,
+                          "applicationLevel": "itinerary"
+                        }
+                      ],
+                      "totalTaxes": 0,
+                      "surcharges": [
+                        {
+                          "value": 0,
+                          "rawValue": "string",
+                          "currencyCode": "string",
+                          "code": "string",
+                          "category": "OLD",
+                          "isExempted": true,
+                          "pricingTimeWindow": "hourly",
+                          "percentage": 0
+                        }
+                      ],
+                      "totalSurcharges": 0,
+                      "fees": [
+                        {
+                          "value": 0,
+                          "rawValue": "string",
+                          "currencyCode": "string",
+                          "code": "string",
+                          "nature": "ticketing",
+                          "minAmount": 0,
+                          "maxAmount": 0
+                        }
+                      ],
+                      "totalFees": 0,
+                      "discount": {
+                        "originalTotal": 0,
+                        "originalBase": 0,
+                        "originalTotalTaxes": 0,
+                        "discountCode": "string",
+                        "discountCodes": [
+                          "string"
+                        ]
+                      },
+                      "conditions": {
+                        "itemOccurrence": {
+                          "min": 0,
+                          "max": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              ],
+              "milesConversionPriceDifference": {
+                "convertedMiles": {
+                  "base": 0,
+                  "total": 0,
+                  "totalTaxes": 0,
+                  "totalSurcharges": 0,
+                  "discount": {
+                    "originalTotal": 0,
+                    "originalBase": 0,
+                    "originalTotalTaxes": 0,
+                    "discountCode": "string",
+                    "discountCodes": [
+                      "string"
+                    ]
+                  }
+                },
+                "remainingNonConverted": {
+                  "base": 0,
+                  "baseDetails": {
+                    "surcharges": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "category": "OLD",
+                        "isExempted": true,
+                        "pricingTimeWindow": "hourly",
+                        "percentage": 0
+                      }
+                    ]
+                  },
+                  "total": 0,
+                  "currencyCode": "string",
+                  "taxes": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "type": "PFC",
+                      "isExempted": true,
+                      "percentage": 0,
+                      "applicationLevel": "itinerary"
+                    }
+                  ],
+                  "totalTaxes": 0,
+                  "surcharges": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "isExempted": true,
+                      "pricingTimeWindow": "hourly",
+                      "percentage": 0
+                    }
+                  ],
+                  "totalSurcharges": 0,
+                  "fees": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "nature": "ticketing",
+                      "minAmount": 0,
+                      "maxAmount": 0
+                    }
+                  ],
+                  "totalFees": 0,
+                  "discount": {
+                    "originalTotal": 0,
+                    "originalBase": 0,
+                    "originalTotalTaxes": 0,
+                    "discountCode": "string",
+                    "discountCodes": [
+                      "string"
+                    ]
+                  },
+                  "conditions": {
+                    "itemOccurrence": {
+                      "min": 0,
+                      "max": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "packDetails": {
+            "isIncomplete": true,
+            "subServiceIds": [
+              "string"
+            ],
+            "selectedSeatId": "string"
+          },
+          "packServiceId": "string"
+        }
+      ],
+      "baggages": [
+        {
+          "id": "string",
+          "travelerIds": [
+            {
+              "id": "string"
+            }
+          ],
+          "status": "inactive",
+          "acceptanceStatus": "notAccepted",
+          "bagTagNumber": "string",
+          "bagTagPrintStatus": "printingRequired",
+          "bagTagDeliveryEligibility": {
+            "status": "eligible",
+            "reasons": [
+              "maxSegmentReached"
+            ]
+          },
+          "weightAmount": "string",
+          "weightUnit": "kilogram",
+          "specialBagType": "string",
+          "weightType": "totalBagWeight"
+        }
+      ],
+      "deeplinkRedirectionUrl": "string",
+      "disruption": {
+        "status": "isDisrupted",
+        "reBookingLink": {
+          "rel": "string",
+          "href": "string",
+          "mediaType": "string",
+          "methods": [
+            "GET"
+          ],
+          "payload": [
+            {
+              "name": "string",
+              "value": "string"
+            }
+          ]
+        },
+        "disruptedFlightIds": [
+          "string"
+        ]
+      }
+    }
+  ],
+  "dictionaries": {
+    "aircraft": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "airline": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "country": {
+      "additionalProp1": "string",
+      "additionalProp2": "string",
+      "additionalProp3": "string"
+    },
+    "flight": {
+      "additionalProp1": {
+        "marketingAirlineCode": "string",
+        "operatingAirlineCode": "string",
+        "operatingAirlineName": "string",
+        "marketingFlightNumber": "123",
+        "operatingAirlineFlightNumber": "123",
+        "aircraftOwnerAirlineCode": "string",
+        "aircraftOwnerAirlineName": "string",
+        "suffix": "A",
+        "departure": {
+          "locationCode": "string",
+          "dateTime": "2018-02-10T20:40:00+02:00",
+          "estimatedDateTime": "2018-02-10T21:40:00+02:00",
+          "gate": "string",
+          "terminal": "string"
+        },
+        "arrival": {
+          "locationCode": "string",
+          "dateTime": "2018-02-10T20:40:00+02:00",
+          "estimatedDateTime": "2018-02-10T21:40:00+02:00",
+          "gate": "string",
+          "terminal": "string"
+        },
+        "aircraftCode": "string",
+        "duration": 0,
+        "connectionTime": 0,
+        "isOpenSegment": false,
+        "isInformational": true,
+        "secureFlightIndicator": false,
+        "isSubjectToGovernmentApproval": true,
+        "performanceIndicator": {
+          "onTimeArrival": 0,
+          "calculationPeriod": "2018-02-10T20:40:00+02:00",
+          "dataAccuracy": "string"
+        },
+        "stops": [
+          {
+            "locationCode": "string",
+            "departureTerminal": "string",
+            "duration": 0,
+            "isChangeOfGauge": true,
+            "arrivalDateTime": "2018-02-10T20:40:00+02:00",
+            "departureDateTime": "2018-02-10T20:40:00+02:00",
+            "aircraftCode": "string",
+            "aircraftOwnerAirlineCode": "string",
+            "aircraftOwnerAirlineName": "string"
+          }
+        ],
+        "meals": {
+          "bookingClass": "string",
+          "mealCodes": [
+            "string"
+          ]
+        },
+        "availableMealsPerBookingClass": [
+          {
+            "bookingClass": "string",
+            "mealCodes": [
+              "string"
+            ]
+          }
+        ],
+        "flightStatus": "scheduled",
+        "aircraftConfigurationVersion": "2C1",
+        "id": "string",
+        "status": "scheduled",
+        "acceptanceStatus": "notOpened",
+        "operatingFlightNumber": "123",
+        "isIATCI": false,
+        "isPassive": false,
+        "isPilgrimConfirmationRequired": false
+      }
+    },
+    "journeyElement": {
+      "additionalProp1": {
+        "id": "string",
+        "travelerId": "string",
+        "flightId": "string",
+        "orderId": "string",
+        "cabin": "string",
+        "seat": {
+          "cabin": "string",
+          "seatNumber": "string",
+          "seatCharacteristicsCodes": [
+            "string"
+          ],
+          "isInfantOnSeat": true,
+          "isInfantAloneOnSeat": true,
+          "seatAvailabilityStatus": "available",
+          "reasonForRestrictionCodes": [
+            "string"
+          ],
+          "travelers": [
+            {
+              "id": "string",
+              "tid": "PAX1",
+              "seatCharacteristicsCodes": [
+                "string"
+              ],
+              "seatAvailabilityStatus": "available",
+              "reasonForRestrictionCodes": [
+                "string"
+              ],
+              "prices": [
+                {
+                  "base": 0,
+                  "baseDetails": {
+                    "surcharges": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "category": "OLD",
+                        "isExempted": true,
+                        "pricingTimeWindow": "hourly",
+                        "percentage": 0
+                      }
+                    ]
+                  },
+                  "total": 0,
+                  "currencyCode": "string",
+                  "taxes": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "type": "PFC",
+                      "isExempted": true,
+                      "percentage": 0,
+                      "applicationLevel": "itinerary"
+                    }
+                  ],
+                  "totalTaxes": 0,
+                  "surcharges": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "isExempted": true,
+                      "pricingTimeWindow": "hourly",
+                      "percentage": 0
+                    }
+                  ],
+                  "totalSurcharges": 0,
+                  "fees": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "nature": "ticketing",
+                      "minAmount": 0,
+                      "maxAmount": 0
+                    }
+                  ],
+                  "totalFees": 0,
+                  "discount": {
+                    "originalTotal": 0,
+                    "originalBase": 0,
+                    "originalTotalTaxes": 0,
+                    "discountCode": "string",
+                    "discountCodes": [
+                      "string"
+                    ]
+                  },
+                  "conditions": {
+                    "itemOccurrence": {
+                      "min": 0,
+                      "max": 0
+                    }
+                  }
+                }
+              ],
+              "milesConversion": {
+                "convertedMiles": {
+                  "base": 0,
+                  "total": 0,
+                  "totalTaxes": 0,
+                  "totalSurcharges": 0,
+                  "discount": {
+                    "originalTotal": 0,
+                    "originalBase": 0,
+                    "originalTotalTaxes": 0,
+                    "discountCode": "string",
+                    "discountCodes": [
+                      "string"
+                    ]
+                  }
+                },
+                "remainingNonConverted": {
+                  "base": 0,
+                  "baseDetails": {
+                    "surcharges": [
+                      {
+                        "value": 0,
+                        "rawValue": "string",
+                        "currencyCode": "string",
+                        "code": "string",
+                        "category": "OLD",
+                        "isExempted": true,
+                        "pricingTimeWindow": "hourly",
+                        "percentage": 0
+                      }
+                    ]
+                  },
+                  "total": 0,
+                  "currencyCode": "string",
+                  "taxes": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "type": "PFC",
+                      "isExempted": true,
+                      "percentage": 0,
+                      "applicationLevel": "itinerary"
+                    }
+                  ],
+                  "totalTaxes": 0,
+                  "surcharges": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "category": "OLD",
+                      "isExempted": true,
+                      "pricingTimeWindow": "hourly",
+                      "percentage": 0
+                    }
+                  ],
+                  "totalSurcharges": 0,
+                  "fees": [
+                    {
+                      "value": 0,
+                      "rawValue": "string",
+                      "currencyCode": "string",
+                      "code": "string",
+                      "nature": "ticketing",
+                      "minAmount": 0,
+                      "maxAmount": 0
+                    }
+                  ],
+                  "totalFees": 0,
+                  "discount": {
+                    "originalTotal": 0,
+                    "originalBase": 0,
+                    "originalTotalTaxes": 0,
+                    "discountCode": "string",
+                    "discountCodes": [
+                      "string"
+                    ]
+                  },
+                  "conditions": {
+                    "itemOccurrence": {
+                      "min": 0,
+                      "max": 0
+                    }
+                  }
+                }
+              },
+              "media": [
+                {
+                  "mediaId": "string",
+                  "travelerId": "string",
+                  "flightIds": [
+                    "string"
+                  ],
+                  "airlineCode": "string"
+                }
+              ],
+              "isExempted": true,
+              "packServiceIds": [
+                "string"
+              ],
+              "selectedPackServiceId": "string"
+            }
+          ],
+          "blockId": "string",
+          "seatType": "string",
+          "coordinates": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "zRotation": 0
+          }
+        },
+        "acceptanceEligibility": {
+          "status": "eligible",
+          "eligibilityWindow": {
+            "openingDateAndTime": "2023-04-20T04:57:17.341Z",
+            "closingDateAndTime": "2023-04-20T04:57:17.341Z"
+          },
+          "reasons": [
+            "firstFlightOtherAirline"
+          ]
+        },
+        "checkInStatus": "accepted",
+        "acceptance": {
+          "channel": "CRYPTIC"
+        },
+        "boardingPassEligibility": {
+          "status": "eligible",
+          "reasons": [
+            "flightEligibilityRule"
+          ],
+          "allowedBoardingPassTypes": [
+            "airportPrinted"
+          ]
+        },
+        "seatmapEligibility": {
+          "status": "eligible",
+          "reasons": [
+            "passengerOnStandby"
+          ]
+        },
+        "boardingPass": {
+          "channel": "CRYPTIC",
+          "barcode": {
+            "type": "aztec",
+            "stream": "string"
+          },
+          "deliveryType": "email",
+          "link": "string",
+          "gate": "string"
+        },
+        "boardingPassPrintStatus": "notPrinted",
+        "frequentFlyerCard": {
+          "id": "string",
+          "tid": "string",
+          "companyCode": "6X",
+          "cardNumber": "992003172079000",
+          "travelerId": "string",
+          "travelerTId": "string",
+          "tierLevel": "GOLD",
+          "tierLevelName": "string",
+          "priorityCode": "3",
+          "allianceTierLevel": "string",
+          "allianceTierLevelName": "string",
+          "alliancePriorityCode": "3",
+          "airlineCustomerValue": "3",
+          "airOfferId": "string"
+        },
+        "boardingStatus": "notBoarded",
+        "bookingStatusCode": "string",
+        "exitSeatSuitability": "suitable",
+        "linkedJourneyElementIds": [
+          "string"
+        ],
+        "isStandbyEarly": false
+      }
+    },
+    "location": {
+      "additionalProp1": {
+        "type": "airport",
+        "airportName": "string",
+        "cityCode": "string",
+        "cityName": "string",
+        "stateCode": "string",
+        "countryCode": "string",
+        "timeZone": "UTC+0530"
+      }
+    },
+    "traveler": {
+      "additionalProp1": {
+        "passengerTypeCode": "ADT",
+        "id": "string",
+        "tid": "string",
+        "names": [
+          {
+            "firstName": "Arthur Ignatius",
+            "middleName": "Ignatius",
+            "lastName": "Holmes",
+            "title": "Dr",
+            "nameType": "universal",
+            "isPreferred": true
+          }
+        ],
+        "dateOfBirth": "2002-07-25",
+        "age": 36,
+        "accompanyingTravelerId": "string",
+        "accompanyingTravelerTid": "string",
+        "gender": "male",
+        "regulatoryDetails": [
+          {
+            "id": "string",
+            "tid": "string",
+            "flightIds": [
+              "string"
+            ],
+            "airlineCode": "string",
+            "regulatoryApisType": "ApisDetailRegulatoryDocument"
+          }
+        ],
+        "nationalityCountryCodes": [
+          "string"
+        ],
+        "customerProfileId": "string",
+        "staffNumber": "string",
+        "staffCategory": "bookable",
+        "entitlementDocuments": [
+          {
+            "id": "string",
+            "tid": "string",
+            "documentType": "SpanishResidentCard"
+          }
+        ],
+        "purposeOfVisit": "hajj",
+        "isPilgrimConfirmationProvided": false,
+        "isVoluntaryToSplitTravelers": false
+      }
+    }
+  }
+}
